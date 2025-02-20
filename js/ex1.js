@@ -54,3 +54,79 @@
 // while(psw != PSW);
 // console.log("Вы вошли в систему!");
 
+// for(let i = -5; i <= 5; ++i) {
+//     if(i == 0) continue;
+//     console.log('i = ' + i);
+// }
+
+// function show(from, text) {
+//     let msg = `${from}: ${email} ${text}`;
+//     return msg;
+// }
+// let email = '111@mail.ru'
+
+// let msg = show('ruslan', 'hello');
+
+// function nan(x) {
+//     console.log(x)
+// }
+// nan(msg);
+// nan(show('Lenochca', 'how are you?'));
+// nan('hello')
+
+// function showPrimes(n) {
+//     for (let i = 2; i < n; i++) {
+//         if (!isPrime(i)) continue;
+//         console.log(i); //простое
+//     }
+// }
+
+// function isPrime(n) {
+//     for (let i = 2; i < n; i++) {
+//         if (n % i == 0) return false;
+//     }
+//     return true;
+// }
+
+// showPrimes(20);
+
+// let show = function() {
+//     console.log('Hello!');
+// };
+
+// show();
+
+// function Cooki(text, yes, no) {
+//     if (confirm(text)) yes();
+//     else no();
+// }
+// function yes() {
+//     console.log('Согласились');
+// }
+// function no() {
+//     console.log('Отказались');
+// }
+// Cooki('У нас куки', yes, no);
+
+// Cooki(
+//     'У нас куки',
+//     function () { console.log('Согласились')},
+//     function () { console.log('Отказались')}
+// );
+
+
+// (function() {
+//     console.log("это анонимная функция");
+// })();
+
+// console.log("start");
+// setTimeout(function() {
+//     console.log("это анонимная функция");
+//     console.log("end");
+// }, 3000);
+
+let anonim = () => {
+    return "this is strelochnaya function";
+}
+
+console.log(anonim());
