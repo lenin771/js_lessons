@@ -125,8 +125,89 @@
 //     console.log("end");
 // }, 3000);
 
-let anonim = () => {
-    return "this is strelochnaya function";
+// let anonim = () => {
+//     return "this is strelochnaya function";
+// }
+
+// console.log(anonim());
+
+// Урок 11 Объекты
+
+// let book = {
+//     title: "name",
+//     author: "Tosha",
+//     nPages: 0,
+//     prise: 100,
+//     "size book": {height: 100}
+// };
+
+// console.log(book.author);
+// book.age = 8;
+
+// console.log(book);
+
+// delete book.nPages;
+
+// console.log(book.title);
+
+// console.log(book['size book']);
+// console.log(book);
+
+// let key = prompt("Что вы хотите узнать о книге?");
+// console.log(book[key]);
+
+// let col = "color";
+// let car = {
+//     model: "bmv",
+//     [col]: "black",
+// };
+// console.log(car.color);
+
+// let book = {
+//     title: "name",
+//     author: "Tosha",
+//     nPages: 25,
+//     prise: 100,
+// };
+// for(let key in book) {
+//     console.log(key + ":" + book[key]);
+// }
+
+
+// 12 урок методы
+
+// let car = {
+//     model: "BMV",
+//     color: "GOLD",
+//     go: function(name) {
+//         console.log("drive"+ ', ' + name); // запись функции первым способом
+//     },
+//     stop: function() {
+//         console.log(this.model, "car stop");
+//     },
+//     getModel() {
+//         return this.model; // запись функции вторым способом, this - внутренняя ссылка
+//     }
+// };
+
+
+// car.go('Ben');
+
+// car.stop();
+
+// console.log(car.getModel());
+
+let car1 = {model: "BMV"};
+let car2 = {model: "opel"};
+
+car1.getModel = getModel;
+car2.getModel = getModel;
+
+console.log( car1.getModel() );
+console.log( car2.getModel() );
+
+function getModel() {
+    return this.model;
 }
 
-console.log(anonim());
+console.log(car1);
