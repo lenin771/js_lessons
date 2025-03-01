@@ -197,17 +197,90 @@
 
 // console.log(car.getModel());
 
-let car1 = {model: "BMV"};
-let car2 = {model: "opel"};
+// let car1 = {model: "BMV"};
+// let car2 = {model: "opel"};
 
-car1.getModel = getModel;
-car2.getModel = getModel;
+// car1.getModel = getModel;
+// car2.getModel = getModel;
 
-console.log( car1.getModel() );
-console.log( car2.getModel() );
+// console.log( car1.getModel() );
+// console.log( car2.getModel() );
 
-function getModel() {
-    return this.model;
-}
+// function getModel() {
+//     return this.model;
+// }
 
-console.log(car1);
+// console.log(car1);
+
+// 13 урок функция-конструктор (клонирование)удобное создание однотипных объектов
+
+// function Book(title, author, prise) {
+//     this.title = title;
+//     this.author = author;
+//     this.prise = prise;
+// }
+// let book = new Book("MyMy", "Tyrgenev", 10);
+// let book2 = new Book("Onegin", "Pyshkin", 20);
+// console.log(book2);
+
+// let car = new function() {
+//     this.model = "reno";
+//     this.go = function() {
+//         console.log("drive");
+//     }
+//     }
+// car.go();
+// console.log(car);
+
+// 14 массивы
+
+// let ar = [1, 2, 3, 4, { name: 'ben'}];
+
+// console.log(ar[4])
+
+// let fruits = ["apple","orang", "gruh"];
+
+// for(let i=0; i < fruits.length; ++i) {
+//     console.log(fruits[i]);
+// }
+//  for(let value of fruits) //другой вывод элементов, которые буквально копируются в value
+//     console.log(value);
+
+// let ar = ["apple","orang", "gruh"];
+
+//     ar.push('sliva'); //методы push and pop - прибавление и удаление последнего элемента
+//     console.log(ar);
+
+// let matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+// matrix[1][1] = 0;
+
+// for(let ron of matrix) {
+//     let col = "";
+//     for(let val of ron) {
+//         col += val + " ";
+//     }
+//     console.log(col);
+// }
+// let s = 0;
+// let i = 1;
+
+// while (i <= 10) {
+//     console.log(i);
+//     i++;
+// }
+
+// 15 методы массивов
+
+// let ar = ["Я", "смотрю", "этот", "обучающий", "урок"];
+
+// let val = ar.splice(3, 0, "интересный");
+// console.log(val);
+// console.log(ar);
+
+// let val = ar.slice(1, 3)
+// console.log(val);
+
